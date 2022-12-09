@@ -1,0 +1,26 @@
+using System;
+using System.Collections;
+public class Mercadinho{
+public string item;
+public double preço;	
+}			
+public class Program
+{
+	public static void Main()
+	{
+		
+		ArrayList item = new ArrayList();
+		
+		Mercadinho it1 = new Mercadinho();	
+	it1.item="del valle fruta"; 
+	it1.preço=3.50;
+	//-------------------------------------	
+		Mercadinho it2 = new Mercadinho();
+	it2.item="CocaCola"; 
+	it2.preço=4.50;	
+	//-------------------------------------	
+		Mercadinho it3 = new Mercadinho();
+	it3.item="CocaCola"; 
+	it3.preço=4.50;
+	}
+}

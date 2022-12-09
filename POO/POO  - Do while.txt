@@ -1,0 +1,19 @@
+using System;	
+public class Program{
+	public static void Main()	{
+	int numero = 0;
+	String op = "";
+
+	do{	
+		Console.WriteLine("Informe um número: ");
+		numero = int.Parse(Console.ReadLine());
+		if(numero % 2 == 0){
+			Console.WriteLine("Este número é par!");
+		}else{
+			Console.WriteLine("Este número é ímpar!");
+		}
+	Console.WriteLine("Você deseja sair? S-Sim  N-Não");
+	op = Console.ReadLine();
+	}while (op == "n");
+	}    
+}

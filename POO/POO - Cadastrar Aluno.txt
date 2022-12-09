@@ -1,0 +1,69 @@
+using System;
+
+public class Aluno{
+	private String nome,endereco,telefone;
+	private int matricula;
+	
+	public void ArmazenarNome(String nomealuno){
+		nome = nomealuno;
+	}
+	
+	public String ExibirNome(){
+		return(nome);
+	}
+	
+	public void ArmazenarMatricula(int mat){
+		matricula = mat;
+	}
+	
+	public int ExibirMatricula(){
+		return(matricula);
+	}
+	
+	public void ArmazenarEndereco(String end){
+		endereco = end;
+	}
+	
+	public String ExibirEndereco(){
+		return(endereco);
+	}
+	
+	public void ArmazenarTelefone(String tel){
+		telefone = tel;
+	}
+	
+	public String ExibirTelefone(){
+		return(telefone);
+	}
+}
+
+					
+public class Program
+{
+	public static void Main()
+	{
+		Aluno aluno1 = new Aluno();
+		
+		aluno1.ArmazenarNome("Heloisa Gabrielle");
+		aluno1.ArmazenarMatricula(001);
+		aluno1.ArmazenarTelefone("(81)98708-1599");
+		aluno1.ArmazenarEndereco("Rua do Sol, N325");
+		
+		String nomedoaluno1 = aluno1.ExibirNome();
+		String telefonedoaluno1 = aluno1.ExibirTelefone();
+		String enderecodoaluno1 = aluno1.ExibirEndereco();
+		int matriculadoaluno1 = aluno1.ExibirMatricula();
+		
+		Console.WriteLine(matriculadoaluno1);
+		Console.WriteLine(nomedoaluno1);
+		Console.WriteLine(telefonedoaluno1);
+		Console.WriteLine(enderecodoaluno1);
+	}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+using System;
+public class Funcionario
+{
+	public String nome;
+	public float salario;
+}
+
+public class Gerente:Funcionario{
+	private float bonificacao;
+	
+	public void setBonificacao(float bon){
+		this.bonificacao = bon;
+	}
+	
+	public float getBonificacao(){
+		return this.bonificacao;
+	}
+}
+
+
+public class Program
+{
+	public static void Main()
+	{
+	Funcionario f1 = new Funcionario();
+	Console.WriteLine("Informe o nome do Funcionário: ");
+	f1.nome = Console.ReadLine(); //usuario atribui o valor
+	
+	Console.WriteLine("Informe salário do Funcionário: ");
+	f1.salario = float.Parse(Console.ReadLine()); //usuario atribui o valor	
+		
+	/*f1.nome = "Biru";  //Atribuição Direta
+	f1.salario = 1000;  //Atribuição Direta*/
+	
+	Gerente g1 = new Gerente();
+	Console.WriteLine("Informe o nome do Gerente: ");
+	g1.nome = Console.ReadLine();
+	Console.WriteLine("Informe salario do Gerente: ");
+	g1.salario = float.Parse(Console.ReadLine());
+	Console.WriteLine("Informe o valor da bonificação do Gerente: ");
+	g1.setBonificacao(float.Parse(Console.ReadLine())); //atribuição para uma variável private pelo método set
+		
+	
+	}
+}

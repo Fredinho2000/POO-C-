@@ -1,0 +1,19 @@
+using System;	
+public class Program{
+	public static void Main()	{
+		int num1, num2, num3, resultado;
+		
+		Console.WriteLine("Informe três números: ");
+		num1 = int.Parse(Console.ReadLine());
+		num2 = int.Parse(Console.ReadLine());
+		num3 = int.Parse(Console.ReadLine());
+		
+		resultado = num1 + num2;
+		
+		if (resultado > num3){
+			Console.WriteLine("A soma de NUM1 com o NUM2 é maior que o NUM3");
+		}else{
+			Console.WriteLine("O NUM3 é maior que a soma do NUM1 e NUM2 ");
+		}
+	}    
+}
